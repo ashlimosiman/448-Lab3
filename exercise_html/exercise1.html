@@ -1,0 +1,31 @@
+<!--
+    Author: Ashli Mosiman
+    Date Last Updated: Sept 19, 2016
+    File Name: exercise1.html
+    Description: page for exercise 1, which asks the user to enter a valid password ( atleast 8 characters long)
+                and asks them to re enter the password
+                notifies user if it's too short or the passwords do not match
+                notifies user when the entries are valid
+-->
+<!doctype HTML>
+
+<html>
+    <head>
+        <script type="text/javascript" src="../src/main.js"></script>
+        <title>Password Validator</title>
+    </head>
+
+    <body>
+        <h2> Password Validator </h2> <br   />
+        <h3> Must be at least 8 characters long </h3> <br   />
+        Password: <input type="password" id="first"> <br    />
+        Re-Enter Password: <input type="password" id="second">
+
+        <br /><br   />
+        <button onclick='validate()'>Validate</button>
+        <br /><br   />
+
+        <a href="../index.html">Home</a>
+    </body>
+
+</html>
