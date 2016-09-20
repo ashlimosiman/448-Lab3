@@ -25,3 +25,7 @@ function validate()
 
 }
 /*End of exercise 1*/
+/*Used for Exercise 2*/
+
+
+/*End of exercise 2*/
