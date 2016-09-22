@@ -1,4 +1,13 @@
 
+
+/*Used overall*/
+
+const display = new Display();
+function changeView(view) {
+  display.changeView(view);
+}
+
+/*End of overall*/
 /* Used for Exercise 1*/
 function validate()
 {
@@ -26,6 +35,56 @@ function validate()
 }
 /*End of exercise 1*/
 /*Used for Exercise 2*/
+function nextPic()
+{
+    var imgNum = document.getElementById("slideshow").src.slice(56,57);
+    if(imgNum == 1)
+    {
+        document.getElementById("slideshow").src = "../src/ex2_imgs/img2.jpg";
+    }
+    else if( imgNum == 2)
+    {
+        document.getElementById("slideshow").src = "../src/ex2_imgs/img3.jpg";
 
+    }
+    else if(imgNum == 3)
+    {
+        document.getElementById("slideshow").src = "../src/ex2_imgs/img4.jpg";
+    }
+    else if(imgNum == 4)
+    {
+        document.getElementById("slideshow").src = "../src/ex2_imgs/img5.jpg";
+    }
+    else
+    {
+        document.getElementById("slideshow").src = "../src/ex2_imgs/img1.jpg";
+    }
+}
+
+function prevPic()
+{
+    var imgNum = document.getElementById("slideshow").src.slice(56,57);
+    if(imgNum == 1)
+    {
+        document.getElementById("slideshow").src = "../src/ex2_imgs/img5.jpg";
+    }
+    else if( imgNum == 2)
+    {
+        document.getElementById("slideshow").src = "../src/ex2_imgs/img1.jpg";
+
+    }
+    else if(imgNum == 3)
+    {
+        document.getElementById("slideshow").src = "../src/ex2_imgs/img2.jpg";
+    }
+    else if(imgNum == 4)
+    {
+        document.getElementById("slideshow").src = "../src/ex2_imgs/img3.jpg";
+    }
+    else
+    {
+        document.getElementById("slideshow").src = "../src/ex2_imgs/img4.jpg";
+    }
+}
 
 /*End of exercise 2*/
