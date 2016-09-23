@@ -76,14 +76,6 @@ a:hover, button:hover
 	background-color: #c33c3c;
 }
 
-img
-{
-	border: 5px solid #1a1a1a;
-	height: 500px;
-	width: 500px;
-	border-radius: 10px;
-}
-
 table
 {
 	margin-left: auto;
@@ -118,4 +110,12 @@ label
 	margin-top: 10px;
     text-align: right;
 	font-weight: bold;
+}
+
+img
+{
+	border: 5px solid #1a1a1a;
+	height: 500px;
+	width: 500px;
+	border-radius: 10px;
 }

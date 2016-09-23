@@ -68,8 +68,6 @@ function nextPic()
         }
     }
 
-}
-
 function prevPic()
 {
     var imgSource = document.getElementById("slideshow").src;
