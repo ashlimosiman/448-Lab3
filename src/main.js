@@ -1,4 +1,13 @@
 
+
+/*Used overall*/
+
+const display = new Display();
+function changeView(view) {
+  display.changeView(view);
+}
+
+/*End of overall*/
 /* Used for Exercise 1*/
 function validate()
 {
@@ -26,6 +35,76 @@ function validate()
 }
 /*End of exercise 1*/
 /*Used for Exercise 2*/
+function nextPic()
+{
+    var imgSource = document.getElementById("slideshow").src;
+    for(var i=imgSource.length-1; i>0; i--)
+    {
+        if(document.getElementById("slideshow").src.charAt(i) == 1)
+        {
+            document.getElementById("slideshow").src = "../src/ex2_imgs/img2.jpg";
+            break;
+        }
+        else if(document.getElementById("slideshow").src.charAt(i) == 2)
+        {
+            document.getElementById("slideshow").src = "../src/ex2_imgs/img3.jpg";
+            break;
 
+        }
+        else if(document.getElementById("slideshow").src.charAt(i) == 3)
+        {
+            document.getElementById("slideshow").src = "../src/ex2_imgs/img4.jpg";
+            break;
+        }
+        else if(document.getElementById("slideshow").src.charAt(i) == 4)
+        {
+            document.getElementById("slideshow").src = "../src/ex2_imgs/img5.jpg";
+            break;
+        }
+        else if(document.getElementById("slideshow").src.charAt(i) == 5)
+        {
+            document.getElementById("slideshow").src = "../src/ex2_imgs/img1.jpg";
+            break;
+        }
+    }
+
+}
+
+function prevPic()
+{
+    var imgSource = document.getElementById("slideshow").src;
+    for(var i=imgSource.length-1; i>0; i--)
+    {
+        if(document.getElementById("slideshow").src.charAt(i) == 1)
+        {
+            document.getElementById("slideshow").src = "../src/ex2_imgs/img5.jpg";
+            break;
+        }
+        else if(document.getElementById("slideshow").src.charAt(i) == 2)
+        {
+            document.getElementById("slideshow").src = "../src/ex2_imgs/img1.jpg";
+            break;
+
+        }
+        else if(document.getElementById("slideshow").src.charAt(i) == 3)
+        {
+            document.getElementById("slideshow").src = "../src/ex2_imgs/img2.jpg";
+            break;
+        }
+        else if(document.getElementById("slideshow").src.charAt(i) == 4)
+        {
+            document.getElementById("slideshow").src = "../src/ex2_imgs/img3.jpg";
+            break;
+        }
+        else if(document.getElementById("slideshow").src.charAt(i) == 5)
+        {
+            document.getElementById("slideshow").src = "../src/ex2_imgs/img4.jpg";
+            break;
+        }
+    }
+}
 
 /*End of exercise 2*/
+/*Used for exercise 3*/
+
+/*End of exercise 3*/
