@@ -1,3 +1,12 @@
+<!--
+    Author: Ashli Mosiman
+    Date Last Updated: Sept 26, 2016
+    File Name: exercise4.html
+    Description: page for exercise 4, which lets the user change the color of the border and background, as well as change the width of the border
+-->
+<!doctype HTML>
+
+
 <html>
     <head>
         <script type="text/javascript" src="../src/main.js"></script>
@@ -6,7 +15,46 @@
     </head>
 
     <body>
-        
+        <br /> <h1>Customize the Design</h1>
+        <table id="Manipulation">
+        <tr><td>
+            <div id="customizing">
+                        "It's no use going back to yesterday, because I was a different person then."<br />
+                        -Lewis Carroll, Alice in Wonderland<br /><br />
+
+                        "But I don't want to go among mad people," Alice remarked.<br />
+                        "Oh, you can't help that," said the Cat: "we're all mad here. I'm mad. You're mad."<br />
+                        "How do you know I'm mad?" said Alice.<br />
+                        "You must be," said the Cat, "or you wouldn't have come here."<br />
+                        -Lewis Carroll, Alice in Wonderland <br /><br />
+
+                        "Imagination is the only weapon in the war against reality."<br />
+                        -Lewis Carroll, Alice in Wonderland<br /><br />
+            </div>
+        </td></tr>
+        <tr><td>
+            <div id="values">
+                    <label>Border Width (Any Value):</label> <input type="text" id="borderWidth"><br    /><br    />
+                    <label><font color="#8B0000" size="4px"> Must be between 0-255</font></label> <br    />
+                    <label><font size="4px"> Border:</font></label> <br    />
+                    <label> Red value:</label> <input type="text" id="borderRed"><br />
+                    <label> Green value:</label> <input type="text" id="borderGreen"><br />
+                    <label> Blue value:</label> <input type="text" id="borderBlue"><br />
+                    <br /><br    />
+                    <label><font color="#8B0000" size="4px"> Must be between 0-255</font></label> <br    />
+                    <label><font size="4px"> Background:</font></label> <br    />
+                    <label> Red value:</label> <input type="text" id="backgroundRed"><br />
+                    <label> Green value:</label> <input type="text" id="backgroundGreen"><br />
+                    <label> Blue value:</label> <input type="text" id="backgroundBlue"><br />
+                    <br /><br    />
+                    <button onclick="changeStyle()">Make Changes</button>
+            </div>
+        </td></tr>
+        <tr><td>
+            <br /><br   />
+            <a href="../index.html">Home</a>
+        </td></tr>
+        </table>
     </body>
 
 </html>

@@ -1,6 +1,6 @@
 /*
 Author: Ashli Mosiman
-Date Last Updated: Sept 20, 2016
+Date Last Updated: Sept 26, 2016
 File Name: main.css
 Description: Designs the webpages
 */
@@ -149,4 +149,30 @@ h1.profile
 .links:hover
 {
 	background-color: #8c6026;
+}
+
+.editing
+{
+	font-size: 20px;
+}
+
+#values
+{
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 5%;
+}
+
+#customizing
+{
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 5%;
+	border: 1px solid rgb(0,0,0);
+	background-color: rgb(179,219,255);
+}
+
+#Manipulation
+{
+	width: 100%;
 }

@@ -1,3 +1,10 @@
+/*
+    Author: Ashli Mosiman
+    Date Last Updated: Sept 19, 2016
+    File Name: main.js
+    Description: contains all javascript methods for the exercises
+*/
+
 
 
 /*Used overall*/
@@ -104,9 +111,46 @@ function prevPic()
 }
 
 /*End of exercise 2*/
-/*Used for exercise 3*/
-
-/*End of exercise 3*/
 /*Used for exercise 4*/
+
+function changeStyle()
+{
+    //retrieving values
+    var brdrWdth = parseInt(document.getElementById("borderWidth").value);
+    var rBrdr = parseInt(document.getElementById("borderRed").value);
+    var gBrdr = parseInt(document.getElementById("borderGreen").value);
+    var bBrdr = parseInt(document.getElementById("borderBlue").value);
+    var rBckgnd = parseInt(document.getElementById("backgroundRed").value);
+    var gBckgnd = parseInt(document.getElementById("backgroundGreen").value);
+    var bBckgnd = parseInt(document.getElementById("backgroundBlue").value);
+    var preview = document.getElementById("customizing");
+
+    if(isNaN(brdrWdth) || isNaN(rBrdr) || isNaN(gBrdr) || isNaN(bBrdr) || !isValid(brdrWdth,rBrdr,gBrdr,bBrdr))
+    {
+        alert("Error. Invalid values for the border.");
+    }
+    else if(isNaN(rBckgnd) || isNaN(gBckgnd) || isNaN(bBckgnd) || !isValid(0,rBckgnd,gBckgnd,bBckgnd))
+    {
+        alert("Error. Invalid values for the background.");
+    }
+    else
+    {
+        preview.style.borderWidth = brdrWdth + "px";
+        preview.style.borderColor = "rgb(" + rBrdr + "," + gBrdr + "," + bBrdr + ")";
+        preview.style.backgroundColor = "rgb(" + rBckgnd + "," + gBckgnd + "," + bBckgnd + ")";
+    }
+}
+
+function isValid(width,red,green,blue)
+{
+    if(red < 0 || red > 255 || green < 0 || green > 255 || blue < 0 || blue > 255)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
 
 /*End of exercise 4*/
