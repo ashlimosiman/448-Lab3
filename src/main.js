@@ -67,6 +67,7 @@ function nextPic()
             break;
         }
     }
+}
 
 function prevPic()
 {
@@ -106,3 +107,6 @@ function prevPic()
 /*Used for exercise 3*/
 
 /*End of exercise 3*/
+/*Used for exercise 4*/
+
+/*End of exercise 4*/

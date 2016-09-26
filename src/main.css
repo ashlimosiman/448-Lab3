@@ -119,3 +119,34 @@ img
 	width: 500px;
 	border-radius: 10px;
 }
+
+.ex3
+{
+	background-image: url(the_shire1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	font-weight: bold;
+}
+
+h1.profile
+{
+	background-color: #DEB887;
+}
+
+.profileBody
+{
+	background-color: #ce954b;
+	color: #FFFFF0;
+	opacity: 0.85;
+}
+
+.links
+{
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.links:hover
+{
+	background-color: #8c6026;
+}
