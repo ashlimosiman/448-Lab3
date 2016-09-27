@@ -8,6 +8,7 @@
 
 <html>
     <head>
+        <!--includes: javascript file and CSS file-->
         <script type="text/javascript" src="../src/main.js"></script>
         <link rel="stylesheet" href="../src/main.css">
         <title>Slideshow</title>
@@ -17,17 +18,21 @@
         <table>
             <tr>
                 <td>
+                    <!--shows the previous picture-->
                     <button  onclick="prevPic()">Prev</button>
                 </td>
                 <td>
+                    <!--displaying the current image at which the user is looking-->
                     <img id="slideshow" src="../src/ex2_imgs/img1.jpg">
                 </td>
                 <td>
+                    <!--shows the next picture-->
                     <button  onclick="nextPic()">Next</button>
                 </td>
             </tr>
             <tr><td>
                 <br /><br   />
+                <!--path to get to the list of exercises-->
                 <a href="../index.html">Home</a>
             </td></tr>
         </table>

@@ -9,6 +9,7 @@
 
 <html>
     <head>
+        <!--includes: javascript file and CSS file-->
         <script type="text/javascript" src="../src/main.js"></script>
         <link rel="stylesheet" href="../src/main.css">
         <title>CSS Manipulation</title>
@@ -18,6 +19,8 @@
         <br /> <h1>Customize the Design</h1>
         <table id="Manipulation">
         <tr><td>
+
+            <!--Dummy text to alter the background color, border color, and border width-->
             <div id="customizing">
                         "It's no use going back to yesterday, because I was a different person then."<br />
                         -Lewis Carroll, Alice in Wonderland<br /><br />
@@ -33,7 +36,9 @@
             </div>
         </td></tr>
         <tr><td>
+            <!--Asking the user for valid values for the background and border colors and the border width-->
             <div id="values">
+                <!--border details-->
                     <label>Border Width (Any Value):</label> <input type="text" id="borderWidth"><br    /><br    />
                     <label><font color="#8B0000" size="4px"> Must be between 0-255</font></label> <br    />
                     <label><font size="4px"> Border:</font></label> <br    />
@@ -41,17 +46,21 @@
                     <label> Green value:</label> <input type="text" id="borderGreen"><br />
                     <label> Blue value:</label> <input type="text" id="borderBlue"><br />
                     <br /><br    />
+
+                <!--background details-->
                     <label><font color="#8B0000" size="4px"> Must be between 0-255</font></label> <br    />
                     <label><font size="4px"> Background:</font></label> <br    />
                     <label> Red value:</label> <input type="text" id="backgroundRed"><br />
                     <label> Green value:</label> <input type="text" id="backgroundGreen"><br />
                     <label> Blue value:</label> <input type="text" id="backgroundBlue"><br />
                     <br /><br    />
+                    <!--calling on method to change details-->
                     <button onclick="changeStyle()">Make Changes</button>
             </div>
         </td></tr>
         <tr><td>
             <br /><br   />
+            <!--path to get to the list of exercises-->
             <a href="../index.html">Home</a>
         </td></tr>
         </table>

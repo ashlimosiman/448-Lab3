@@ -11,6 +11,7 @@
 
 <html>
     <head>
+        <!--includes: javascript file and CSS file-->
         <script type="text/javascript" src="../src/main.js"></script>
         <link rel="stylesheet" href="../src/main.css">
 
@@ -23,18 +24,22 @@
                 <h2> Password Validator </h2>
             </th>
             <tr><td>
+                <!--establishing requirements-->
                 <h3> Must be at least 8 characters long </h3>
             </td></tr>
             <tr><td>
+                <!--taking in the password twice-->
                 <label>Password: </label><input type="password" id="first"> <br    />
                 <label>Re-Enter Password: </label><input type="password" id="second">
             </td></tr>
             <tr><td>
                     <br /><br   />
+                    <!--calling on the method to verify the password-->
                     <button onclick='validate()'>Validate</button>
                 </td></tr>
                 <tr><td>
                     <br /><br   />
+                    <!--path to get to the list of exercises-->
                     <a href="../index.html">Home</a>
                 </td></tr>
     </table>
